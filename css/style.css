@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  align-items: center;
+	flex-wrap: wrap;
+	padding: 10px 20px;
+  margin-top: auto;
+  flex-direction: row;
+}
+
+footer .left {
+  font-size: 13px;
+	justify-content: flex-start;
+}
+
+footer .right {
+	justify-content: flex-end;
+}
+
+footer a {
+  font-size: 13px;
+}
