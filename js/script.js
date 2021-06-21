@@ -147,7 +147,7 @@ const displayController = (() => {
           return;
         }
         else if(checkWinner() === "Tie"){
-          displayWinner(currentTurn);
+          displayWinner("Tie");
           displayBoard();
           newGameButtons();
           return;
