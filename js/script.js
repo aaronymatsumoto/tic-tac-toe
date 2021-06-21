@@ -17,20 +17,15 @@ const player = (symbol, name) => {
 const displayController = (() => {
 
   //player one enter name
-  const playerOneName = "Aaron";
-  const playerOne = player("X", playerOneName);
+  const playerOne = player("X", "Aaron");
   //player two enter name or select AI (make sure not same name and not "")
-  const playerTwoName = "Trinh";
-  const playerTwo = player("O", playerOneName);
-  //randomize who goes first
-  //for now player 1 goes first
-  let currentTurn = playerOneName;
-
+  const playerTwo = player("O", "Trinh");
+  let currentTurn = playerOne.name;
   let winner = "";
 
   // gets the symbol of the current turn
   const getCurrentTurn = (name) => {
-    if (name === playerOneName) {
+    if (name === playerOne.name) {
       return playerOne.symbol;
     }
     else {
@@ -40,11 +35,11 @@ const displayController = (() => {
 
   //change turns
   const changeTurn = (name) => {
-    if (name === playerOneName) {
-      currentTurn = playerTwoName;
+    if (name === playerOne.name) {
+      currentTurn = playerTwo.name;
     }
     else {
-      currentTurn = playerOneName;
+      currentTurn = playerOne.name;
     }
   }
 
@@ -128,12 +123,7 @@ const displayController = (() => {
       btnRematch.onclick = function () {
         resetGame();
       };
-      let btnReset = document.createElement("button");
-      btnReset.innerHTML = "New Players";
-      btnReset.classList = "buttons";
-      btnReset.id = "btnReset";
       newGameContainer.appendChild(btnRematch);
-      newGameContainer.appendChild(btnReset);
     }
 
     const place = (field) => {

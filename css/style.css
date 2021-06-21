@@ -49,6 +49,7 @@ footer a {
   display: flex;
   justify-content: center;
   margin: 50px 0;
+  font-size: 24px;
 }
 
 #boardContainer {
@@ -95,5 +96,18 @@ footer a {
 
 #newGame {
   display: flex;
-  
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.buttons {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: #4285F4;
+  color: white;
+}
+
+.buttons:hover {
+  cursor: pointer;
 }
