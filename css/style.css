@@ -92,3 +92,8 @@ footer a {
   cursor: pointer;
   background-color: #f2f2f2;
 }
+
+#newGame {
+  display: flex;
+  
+}
